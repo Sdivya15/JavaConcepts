@@ -15,7 +15,7 @@ public class Employee {
 
     void updateSalary(double increment) {
         salary += increment;   // instance change
-        bonus += 500;          // static change (TRICK)
+        bonus += 500;          // static change
     }
 
     void display() {
@@ -25,13 +25,12 @@ public class Employee {
         System.out.println("Salary: " + salary);
         System.out.println("Company Bonus: " + bonus);
         System.out.println("Individual Bonus: " + individualBonus);
-        System.out.println("----------------------");
     }
 
     public static void main(String[] args) {
 
         Employee e1 = new Employee("Divya", 30000);
-        Employee e2 = new Employee("Ravi", 25000);
+        Employee e2 = new Employee("Teja", 35000);
 
         e1.updateSalary(2000);
         e2.updateSalary(1000);
