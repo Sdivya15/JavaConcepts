@@ -46,6 +46,7 @@ public class GradingSystem {
             System.out.println("Grade B");
 
         }
+
         else if (marks >= 50 && marks <= 74) {
 
             System.out.println("Grade C");
